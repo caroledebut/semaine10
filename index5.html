@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Formulaire</title>
+        <meta charset="utf-8">
+        <link type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+    </head>
+    
+    <body>
+      <form method="post" id="form">
+
+          <p>
+              <label for="sexe">Votre sexe : </label>
+              <input type="radio" name="sexe" value="H" checked id="sexe"/> Homme
+              <input type="radio" name="sexe" value="F" id="sexe">Femme
+          </p>
+
+          <p>
+              <label for="nom">Votre nom : </label>
+              <input type="text" name="nom" id="nom" onclick=testnom( )/>
+          </p>
+  
+          <p>
+              <label for="prenom">Votre prénom : </label>
+              <input type="text" name="prenom" id="prenom" onclick=testnom( )/>
+          </p>
+          
+          <p>
+              <label for="age">Votre age : </label>
+              <input type="text" name="age" id="age" onclick=testage( )/>
+          </p> 
+          
+          <p>
+              <label for="pseudo">Votre pseudo : </label>
+              <input type="text" name="pseudo" id="pseudo" onclick=testpseudo( )/>
+          </p>        
+          
+          <p>
+              <label for="password">Votre mot de passe : </label>
+              <input type="password" name="password1" id="password1" on click=testpassword( )/>
+          </p>        
+ 
+           <p>
+              <label for="password">Confirmation de votre mot de passe : </label>
+              <input type="password" name="password2" id="password2" onclick=testpassword( )/>
+          </p>   
+          
+          <p>
+              <label for="pays">Pays : </label>
+              <select onclick=testpays() >
+                  <option value="france">France</option>
+                  <option value="belgique">Belgique</option>
+                  <option value="canada">Canada</option>
+              </select>
+          </p>
+          <p>
+              <label for="mail">Votre email : </label>
+              <input type="email" id="email"/> 
+          </p>
+      </form>        
+       
+       <script src="essai5.js"></script>
+    </body>
+</html>
